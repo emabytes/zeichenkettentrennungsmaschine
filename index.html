@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeichenkettentrennungsapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="#">
+        <h1>Zeichenkettentrennungsmaschine</h1>
+        <label for="">Zu trennende Zeichenkette</label>
+        <br>
+        <input type="text" id="sentence">
+        <br>
+        <br>
+        <label for="">Zeichenkette für die Trennungsposition</label>
+        <br>
+        <input type="text" id="word">
+        <br>
+        <br>
+        <input type="radio" name="radio" id="davor" checked>
+        <label for="">davor trennen</label>
+
+        <input type="radio" name="radio" id="danach">
+        <label for="">danach trennen</label>
+        <br>
+        <br>
+        <input class="btn" type="button" value="Trennen" class="btn" onclick="trennen()">
+
+        <h2>Ausgabe</h2>
+        <div>
+            <h3>Vorderer Teil</h3>
+            <p id="vor"></p>
+        </div>
+
+        <div>
+            <h3>Hinterer Teil</h3>
+            <p id="hinter"></p>
+        </div>
+        <p id="warning"></p>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
